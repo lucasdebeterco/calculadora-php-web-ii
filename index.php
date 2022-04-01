@@ -65,49 +65,46 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calculadora PHP</title>
 </head>
+
 <body>
-    <form action="" method="post">
-        <table border="1">
-            <tr>
-                <td colspan="4">
-                    <input type="text" name="display" value=<?php echo $num; ?> >
-                </td>
-            </tr>
-            
-            <tr>
-                <td><input type="submit" name="submit" value="7"></td>
-                <td><input type="submit" name="submit" value="8"></td>
-                <td><input type="submit" name="submit" value="9"></td>
-                <td><input type="submit" name="op" value="/"></td>
-            </tr>
+    <div class="container">
+        <div class="calc-form flex align-center justify-center">
+            <form action="" method="post">
+                <div class="linha">
+                    <input type="text" name="display" class="display" value=<?php echo $num; ?> >
+                </div>
+                <div class="calculadora">
+                    <div><input type="submit" name="submit" value="7"></div>
+                    <div><input type="submit" name="submit" value="8"></div>
+                    <div><input type="submit" name="submit" value="9"></div>
+                    <div><input type="submit" name="op" class="op" value="/"></div>
 
-            <tr>
-                <td><input type="submit" name="submit" value="4"></td>
-                <td><input type="submit" name="submit" value="5"></td>
-                <td><input type="submit" name="submit" value="6"></td>
-                <td><input type="submit" name="op" value="+"></td>
-            </tr>
+                    <div><input type="submit" name="submit" value="4"></div>
+                    <div><input type="submit" name="submit" value="5"></div>
+                    <div><input type="submit" name="submit" value="6"></div>
+                    <div><input type="submit" name="op" class="op" value="+"></div>
 
-            <tr>
-                <td><input type="submit" name="submit" value="1"></td>
-                <td><input type="submit" name="submit" value="2"></td>
-                <td><input type="submit" name="submit" value="3"></td>
-                <td><input type="submit" name="op" value="-"></td>
-            </tr>
+                    <div><input type="submit" name="submit" value="1"></div>
+                    <div><input type="submit" name="submit" value="2"></div>
+                    <div><input type="submit" name="submit" value="3"></div>
+                    <div><input type="submit" name="op" class="op" value="-"></div>
 
-            <tr>
-                <td><input type="submit" name="submit" value="0"></td>
-                <td><input type="submit" name="submit" value="C"></td>
-                <td><input type="submit" name="equals" value="="></td>
-                <td><input type="submit" name="op" value="*"></td>
-            </tr>
-        </table>
-    </form>
+                    <div><input type="submit" name="submit" value="0"></div>
+                    <div><input type="submit" name="equals" value="="></div>
+                    <div><input type="submit" name="submit" value="0"></div>
+                    <div><input type="submit" name="op" class="op" value="*"></div>
+                </table>
+            </form> 
+        </div>
+    </div>
 </body>
+
 </html>
