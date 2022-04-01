@@ -79,7 +79,7 @@
         <div class="calc-form flex align-center justify-center">
             <form action="" method="post">
                 <div class="linha">
-                    <input type="text" name="display" class="display" value=<?php echo $num; ?> >
+                    <input type="text" name="display" class="display" readonly value=<?php echo $num; ?>  >
                 </div>
                 <div class="calculadora">
                     <div><input type="submit" name="submit" value="7"></div>

@@ -7,7 +7,7 @@ class Subtracao {
     }
 
     public function subtrai($numeros) {
-        $result = $numeros[0] - $numeros[1];
+        $result = $numeros[1] - $numeros[0];
         return  $result;
     }
 }
